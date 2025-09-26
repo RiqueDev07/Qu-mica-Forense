@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química Forense - Análise de Substâncias</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-microscope me-2"></i>
+                <span>Química Forense</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero" data-section="hero">
+                            <i class="fas fa-home me-1"></i>Início
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#methodology" data-section="methodology">
+                            <i class="fas fa-book me-1"></i>Metodologia
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alcohol" data-section="alcohol">
+                            <i class="fas fa-wine-bottle me-1"></i>Álcool
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cocaine" data-section="cocaine">
+                            <i class="fas fa-flask me-1"></i>Cocaína
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blood" data-section="blood">
+                            <i class="fas fa-tint me-1"></i>Sangue
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#drugs" data-section="drugs">
+                            <i class="fas fa-pills me-1"></i>Outras Drogas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#additional-substances" data-section="additional-substances">
+                            <i class="fas fa-microscope me-1"></i>Catálogo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="hero-section content-section active">
+        <div class="molecule-background">
+            <canvas id="molecule-canvas"></canvas>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="hero-content" data-aos="fade-up">
+                        <h1 class="hero-title mb-4">
+                            <span class="text-primary">Química</span> Forense
+                        </h1>
+                        <p class="hero-subtitle mb-5">
+                            Análise científica de substâncias em investigações criminais através de métodos analíticos avançados
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-lg me-3" data-section="alcohol">
+                                <i class="fas fa-search me-2"></i>Explorar Análises
+                            </button>
+                            <button class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-book me-2"></i>Metodologia
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Methodology Section -->
+<section id="methodology" class="content-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">
+                <i class="fas fa-book text-primary me-3"></i>
+                Metodologia Científica Forense
+            </h2>
+            <p class="section-subtitle">Protocolos e técnicas analíticas para investigações criminais</p>
+        </div>
+        
+        <!-- Scientific Method Overview -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="methodology-overview" data-aos="fade-up">
+                    <h3 class="text-primary mb-4">
+                        <i class="fas fa-microscope me-2"></i>Método Científico na Química Forense
+                    </h3>
+                    <p class="lead mb-4">
+                        A química forense aplica rigorosamente o método científico para garantir a validade 
+                        e confiabilidade dos resultados analíticos em investigações criminais.
+                    </p>
+                    
+                    <div class="scientific-process">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="step-icon">
+                                        <i class="fas fa-question-circle"></i>
+                                    </div>
+                                    <h5>1. Observação</h5>
+                                    <p>Coleta sistemática de evidências na cena do crime</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="step-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <h5>2. Hipótese</h5>
+                                    <p>Formulação de teorias baseadas nas evidências coletadas</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="step-icon">
+                                        <i class="fas fa-flask"></i>
+                                    </div>
+                                    <h5>3. Experimentação</h5>
+                                    <p>Análise laboratorial com técnicas validadas</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="step-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h5>4. Conclusão</h5>
+                                    <p>Interpretação científica dos resultados obtidos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Analytical Techniques -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h3 class="text-primary mb-4" data-aos="fade-up">
+                    <i class="fas fa-cogs me-2"></i>Técnicas Analíticas Principais
+                </h3>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="technique-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="technique-header">
+                        <i class="fas fa-wave-square"></i>
+                        <h4>Cromatografia (GC/LC)</h4>
+                    </div>
+                    <div class="technique-content">
+                        <p><strong>Princípio:</strong> Separação de compostos baseada em suas propriedades físico-químicas</p>
+                        <ul class="technique-features">
+                            <li><strong>GC-MS:</strong> Ideal para substâncias voláteis</li>
+                            <li><strong>LC-MS:</strong> Compostos termolábeis</li>
+                            <li><strong>Vantagens:</strong> Alta seletividade e sensibilidade</li>
+                            <li><strong>Aplicações:</strong> Drogas, toxinas, explosivos</li>
+                        </ul>
+                        <div class="technique-specs">
+                            <span class="spec-badge">Limite de detecção: ng/mL</span>
+                            <span class="spec-badge">Precisão: >95%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="technique-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="technique-header">
+                        <i class="fas fa-atom"></i>
+                        <h4>Espectrometria de Massas</h4>
+                    </div>
+                    <div class="technique-content">
+                        <p><strong>Princípio:</strong> Identificação molecular através da razão massa/carga</p>
+                        <ul class="technique-features">
+                            <li><strong>ESI-MS:</strong> Ionização por eletrospray</li>
+                            <li><strong>MALDI-TOF:</strong> Proteínas e biomoléculas</li>
+                            <li><strong>Vantagens:</strong> Identificação inequívoca</li>
+                            <li><strong>Aplicações:</strong> Estrutura molecular, quantificação</li>
+                        </ul>
+                        <div class="technique-specs">
+                            <span class="spec-badge">Resolução: >10,000</span>
+                            <span class="spec-badge">Exatidão: <5 ppm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="technique-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="technique-header">
+                        <i class="fas fa-dna"></i>
+                        <h4>Análise de DNA</h4>
+                    </div>
+                    <div class="technique-content">
+                        <p><strong>Princípio:</strong> Amplificação e sequenciamento de regiões polimórficas</p>
+                        <ul class="technique-features">
+                            <li><strong>STR:</strong> Short Tandem Repeats</li>
+                            <li><strong>PCR:</strong> Reação em Cadeia da Polimerase</li>
+                            <li><strong>Vantagens:</strong> Identificação individual única</li>
+                            <li><strong>Aplicações:</strong> Identificação humana, paternidade</li>
+                        </ul>
+                        <div class="technique-specs">
+                            <span class="spec-badge">Probabilidade: 1 em 10^15</span>
+                            <span class="spec-badge">Sensibilidade: pg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 mb-4">
+                <div class="technique-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="technique-header">
+                        <i class="fas fa-radiation"></i>
+                        <h4>Espectroscopia</h4>
+                    </div>
+                    <div class="technique-content">
+                        <p><strong>Princípio:</strong> Interação da radiação eletromagnética com a matéria</p>
+                        <ul class="technique-features">
+                            <li><strong>FTIR:</strong> Identificação de grupos funcionais</li>
+                            <li><strong>UV-Vis:</strong> Sistemas conjugados</li>
+                            <li><strong>Vantagens:</strong> Análise não destrutiva</li>
+                            <li><strong>Aplicações:</strong> Tintas, fibras, polímeros</li>
+                        </ul>
+                        <div class="technique-specs">
+                            <span class="spec-badge">Resolução: 0.5 cm⁻¹</span>
+                            <span class="spec-badge">Range: 400-4000 cm⁻¹</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quality Control -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="quality-control-section" data-aos="fade-up">
+                    <h3 class="text-primary mb-4">
+                        <i class="fas fa-shield-alt me-2"></i>Controle de Qualidade
+                    </h3>
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="qc-card">
+                                <div class="qc-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <h5>Validação</h5>
+                                <p>Métodos validados conforme normas ISO 17025 e diretrizes internacionais</p>
+                                <ul class="qc-list">
+                                    <li>Linearidade</li>
+                                    <li>Precisão</li>
+                                    <li>Exatidão</li>
+                                    <li>Limite de detecção</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <div class="qc-card">
+                                <div class="qc-icon">
+                                    <i class="fas fa-users-cog"></i>
+                                </div>
+                                <h5>Cadeia de Custódia</h5>
+                                <p>Rastreabilidade completa desde a coleta até o laudo final</p>
+                                <ul class="qc-list">
+                                    <li>Identificação única</li>
+                                    <li>Registro temporal</li>
+                                    <li>Responsável técnico</li>
+                                    <li>Condições de armazenamento</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <div class="qc-card">
+                                <div class="qc-icon">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <h5>Controles</h5>
+                                <p>Amostras de controle positivo, negativo e padrões certificados</p>
+                                <ul class="qc-list">
+                                    <li>Brancos analíticos</li>
+                                    <li>Padrões internos</li>
+                                    <li>Duplicatas</li>
+                                    <li>Materiais de referência</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Statistical Analysis -->
+        <div class="row">
+            <div class="col-12">
+                <div class="statistics-section" data-aos="fade-up">
+                    <h3 class="text-primary mb-4">
+                        <i class="fas fa-calculator me-2"></i>Análise Estatística dos Dados
+                    </h3>
+                    
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="stats-content">
+                                <p class="mb-4">
+                                    A interpretação correta dos dados analíticos requer tratamento estatístico 
+                                    rigoroso para determinar a significância dos resultados.
+                                </p>
+                                
+                                <div class="stats-methods">
+                                    <div class="stat-method mb-3">
+                                        <h5><i class="fas fa-chart-bar me-2"></i>Testes de Hipóteses</h5>
+                                        <p>Determinação da significância estatística dos resultados (p < 0.05)</p>
+                                    </div>
+                                    
+                                    <div class="stat-method mb-3">
+                                        <h5><i class="fas fa-project-diagram me-2"></i>Análise de Variância (ANOVA)</h5>
+                                        <p>Comparação entre múltiplas amostras e condições analíticas</p>
+                                    </div>
+                                    
+                                    <div class="stat-method mb-3">
+                                        <h5><i class="fas fa-exclamation-triangle me-2"></i>Cálculo de Incerteza</h5>
+                                        <p>Estimativa da incerteza de medição conforme GUM (Guide to Uncertainty in Measurement)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="stats-formula-box">
+                                <h6 class="text-center mb-3">Fórmulas Estatísticas Principais</h6>
+                                
+                                <div class="formula-item">
+                                    <strong>Desvio Padrão:</strong>
+                                    <div class="formula">σ = √[(Σ(xi - μ)²)/N]</div>
+                                </div>
+                                
+                                <div class="formula-item">
+                                    <strong>Coeficiente de Variação:</strong>
+                                    <div class="formula">CV = (σ/μ) × 100%</div>
+                                </div>
+                                
+                                <div class="formula-item">
+                                    <strong>Limite de Detecção:</strong>
+                                    <div class="formula">LOD = 3.3 × (σ/S)</div>
+                                </div>
+                                
+                                <div class="formula-item">
+                                    <strong>Limite de Quantificação:</strong>
+                                    <div class="formula">LOQ = 10 × (σ/S)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Alcohol Section -->
+    <section id="alcohol-section" class="content-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-wine-bottle text-primary me-3"></i>
+                    Análise de Álcool Etílico
+                </h2>
+                <p class="section-subtitle">Detecção e quantificação de etanol em amostras biológicas</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="substance-card" data-aos="fade-up">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <div class="substance-img mb-3">
+                                    <img src="/img/571-5715013_bmse010128-compound-formula-of-alcohol-hd-png-download-8289507.png" 
+                                         alt="Estrutura molecular do Etanol" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="substance-content">
+                                    <h3 class="substance-title">Etanol (C₂H₅OH)</h3>
+                                    <p class="substance-description">
+                                        O álcool etílico é uma das substâncias mais comumente analisadas em química forense, 
+                                        especialmente em casos de condução sob influência e mortes suspeitas. A análise precisa 
+                                        do etanol é crucial para determinar os níveis de intoxicação.
+                                    </p>
+                                    
+                                    <div class="properties-grid mt-4">
+                                        <div class="property-item">
+                                            <span class="property-label">Fórmula Molecular:</span>
+                                            <span class="property-value">C₂H₅OH</span>
+                                        </div>
+                                        <div class="property-item">
+                                            <span class="property-label">Peso Molecular:</span>
+                                            <span class="property-value">46.07 g/mol</span>
+                                        </div>
+                                        <div class="property-item">
+                                            <span class="property-label">Ponto de Ebulição:</span>
+                                            <span class="property-value">78.37°C</span>
+                                        </div>
+                                        <div class="property-item">
+                                            <span class="property-label">Densidade:</span>
+                                            <span class="property-value">0.789 g/cm³</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detection-method mt-4">
+                                        <h5><i class="fas fa-search me-2"></i>Métodos de Detecção</h5>
+                                        <ul class="method-list">
+                                            <li>Cromatografia gasosa com detector de ionização de chama (GC-FID)</li>
+                                            <li>Análise por headspace para amostras de sangue</li>
+                                            <li>Espectrofotometria enzimática</li>
+                                            <li>Análise por difração de raios X</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cocaine Section -->
+    <section id="cocaine-section" class="content-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-flask text-primary me-3"></i>
+                    Análise de Cocaína
+                </h2>
+                <p class="section-subtitle">Identificação e quantificação de alcaloides da coca</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="substance-card" data-aos="fade-up">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <div class="substance-img mb-3">
+                                    <img src="/img/estructura-molecular-de-la-cocaína-fórmula-química-esquelética-de-la-cocaína-ilustración-2847436225-removebg-preview.png" 
+                                         alt="Estrutura molecular da Cocaína" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="substance-content">
+                                    <h3 class="substance-title">Cocaína (C₁₇H₂₁NO₄)</h3>
+                                    <p class="substance-description">
+                                        Alcaloide extraído das folhas de Erythroxylum coca. É uma substância controlada 
+                                        frequentemente encontrada em investigações criminais. Sua detecção requer métodos 
+                                        analíticos específicos devido à sua estrutura molecular complexa.
+                                    </p>
+                                    
+                                    <div class="properties-grid mt-4">
+                                        <div class="property-item">
+                                            <span class="property-label">Fórmula Molecular:</span>
+                                            <span class="property-value">C₁₇H₂₁NO₄</span>
+                                        </div>
+                                        <div class="property-item">
+                                            <span class="property-label">Peso Molecular:</span>
+                                            <span class="property-value">303.35 g/mol</span>
+                                        </div>
+                                        <div class="property-item">
+                                            <span class="property-label">Ponto de Fusão:</span>
+                                            <span class="property-value">98°C</span>
+                                        </div>
+                                        <div class="property-item">
+                                            <span class="property-label">Solubilidade:</span>
+                                            <span class="property-value">Hidrocloreto solúvel</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="detection-method mt-4">
+                                        <h5><i class="fas fa-search me-2"></i>Métodos de Detecção</h5>
+                                        <ul class="method-list">
+                                            <li>GC-MS (Cromatografia gasosa acoplada à espectrometria de massas)</li>
+                                            <li>Testes colorimétricos preliminares com reagente de Scott</li>
+                                            <li>FTIR (Espectroscopia no infravermelho)</li>
+                                            <li>LC-MS/MS para análises quantitativas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blood Section -->
+    <section id="blood-section" class="content-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-tint text-primary me-3"></i>
+                    Análise de Sangue
+                </h2>
+                <p class="section-subtitle">Identificação e análise de componentes sanguíneos</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up" data-aos-delay="100">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                    <img src="/img/hemoglobina-brilhante-fórmula-química-da-156908248-4079845734-removebg-preview.png" 
+                                         alt="Estrutura da Hemoglobina" class="img-fluid">
+                            </div>
+                            <h3 class="substance-title">Hemoglobina</h3>
+                            <p class="substance-description">
+                                Proteína responsável pelo transporte de oxigênio no sangue. Sua detecção é crucial 
+                                em cenas de crime para confirmar a presença de sangue humano.
+                            </p>
+                            
+                            <div class="properties-grid mt-4">
+                                <div class="property-item">
+                                    <span class="property-label">Peso Molecular:</span>
+                                    <span class="property-value">~64,500 Da</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Composição:</span>
+                                    <span class="property-value">4 subunidades</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Ferro:</span>
+                                    <span class="property-value">4 átomos/molécula</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detection-method mt-4">
+                                <h5><i class="fas fa-search me-2"></i>Métodos de Detecção</h5>
+                                <ul class="method-list">
+                                    <li>Teste de Kastle-Meyer (fenolftaleína)</li>
+                                    <li>Teste de luminol para sangue latente</li>
+                                    <li>Espectrofotometria UV-Vis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                    <img src="/img/pesquisa-de-celulas-de-moleculas-de-helice-humana-de-dna-do-homem-biologico-da-ciencia-com-ilustracao-3d-do-genoma-da-estrutura-do-sangue_42100-3677-4090841564-removebg-preview.png" 
+                                         alt="Estrutura do DNA" class="img-fluid">
+                            </div>
+                            <h3 class="substance-title">DNA Sanguíneo</h3>
+                            <p class="substance-description">
+                                O DNA presente nos leucócitos do sangue permite identificação individual e é 
+                                fundamental na medicina forense moderna.
+                            </p>
+                            
+                            <div class="properties-grid mt-4">
+                                <div class="property-item">
+                                    <span class="property-label">Localização:</span>
+                                    <span class="property-value">Núcleo celular</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Estabilidade:</span>
+                                    <span class="property-value">Alta resistência</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Unicidade:</span>
+                                    <span class="property-value">Individual</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detection-method mt-4">
+                                <h5><i class="fas fa-search me-2"></i>Métodos de Detecção</h5>
+                                <ul class="method-list">
+                                    <li>PCR (Reação em Cadeia da Polimerase)</li>
+                                    <li>Análise de STRs (Short Tandem Repeats)</li>
+                                    <li>Sequenciamento de DNA</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Drugs Section -->
+    <section id="drugs-section" class="content-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-pills text-primary me-3"></i>
+                    Outras Substâncias Controladas
+                </h2>
+                <p class="section-subtitle">Análise de diferentes classes de drogas ilícitas</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up" data-aos-delay="100">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                    <img src="/img/thc-847917997.png" 
+                                         alt="Estrutura molecular do THC" class="img-fluid">
+                            </div>
+                            <h3 class="substance-title">THC</h3>
+                            <p class="substance-description">
+                                Principal componente psicoativo da cannabis. Frequentemente detectado em análises toxicológicas.
+                            </p>
+                            
+                            <div class="properties-grid mt-3">
+                                <div class="property-item">
+                                    <span class="property-label">Fórmula:</span>
+                                    <span class="property-value">C₂₁H₃₀O₂</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Peso Molecular:</span>
+                                    <span class="property-value">314.46 g/mol</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detection-method mt-3">
+                                <h6><i class="fas fa-search me-1"></i>Detecção</h6>
+                                <p class="small mb-0">GC-MS e ELISA para triagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                <img src="/img/png-transparent-methamphetamine-molecule-chemical-structure-chemistry-chemical-formula-methine-group-angle-white-text-229894622.png" 
+                                     alt="Estrutura molecular da Metanfetamina" class="img-fluid">
+                            </div>
+                            <h3 class="substance-title">Metanfetamina</h3>
+                            <p class="substance-description">
+                                Estimulante sintético altamente viciante, comumente encontrado em investigações.
+                            </p>
+                            
+                            <div class="properties-grid mt-3">
+                                <div class="property-item">
+                                    <span class="property-label">Fórmula:</span>
+                                    <span class="property-value">C₁₀H₁₅N</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Peso Molecular:</span>
+                                    <span class="property-value">149.23 g/mol</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detection-method mt-3">
+                                <h6><i class="fas fa-search me-1"></i>Detecção</h6>
+                                <p class="small mb-0">GC-MS e LC-MS/MS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up" data-aos-delay="300">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                <img src="/img/1200px-LSD_structural_formulae_v.1-2758723821.png" 
+                                     alt="Estrutura molecular do LSD" class="img-fluid">
+                            </div>
+                            <h3 class="substance-title">LSD</h3>
+                            <p class="substance-description">
+                                Alucinógeno sintético extremamente potente, detectável em quantidades muito pequenas.
+                            </p>
+                            
+                            <div class="properties-grid mt-3">
+                                <div class="property-item">
+                                    <span class="property-label">Fórmula:</span>
+                                    <span class="property-value">C₂₀H₂₅N₃O</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Dose Ativa:</span>
+                                    <span class="property-value">20-100 μg</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detection-method mt-3">
+                                <h6><i class="fas fa-search me-1"></i>Detecção</h6>
+                                <p class="small mb-0">LC-MS/MS especializada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Substances Section -->
+    <section id="additional-substances" class="content-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-flask text-primary me-3"></i>
+                    Catálogo de Substâncias
+                </h2>
+                <p class="section-subtitle">Análise detalhada de compostos químicos relevantes para investigações forenses</p>
+            </div>
+            
+            <div class="row">
+                <!-- Anfetamina -->
+                <div class="col-lg-4 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                <img src="/img/png-transparent-methamphetamine-molecule-chemical-structure-chemistry-chemical-formula-methine-group-angle-white-text-229894622.png" 
+                                     alt="Estrutura molecular da Anfetamina" class="img-fluid">
+                            </div>
+                            <h3 class="substance-title">Anfetamina</h3>
+                            <div class="properties-grid mt-3">
+                                <div class="property-item">
+                                    <span class="property-label">Fórmula:</span>
+                                    <span class="property-value">C₉H₁₃N</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Massa Molar:</span>
+                                    <span class="property-value">135.21 g/mol</span>
+                                </div>
+                            </div>
+                            <div class="detection-method mt-3">
+                                <h6>Métodos de Detecção</h6>
+                                <ul class="method-list">
+                                    <li>Cromatografia Gasosa</li>
+                                    <li>Imunoensaio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MDMA (Ecstasy) -->
+                <div class="col-lg-4 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                <img src="/img/1200px-LSD_structural_formulae_v.1-2758723821.png" 
+                                     alt="Estrutura molecular do MDMA" class="img-fluid">
+                            </div>
+                            <h3 class="substance-title">MDMA (Ecstasy)</h3>
+                            <div class="properties-grid mt-3">
+                                <div class="property-item">
+                                    <span class="property-label">Fórmula:</span>
+                                    <span class="property-value">C₁₁H₁₅NO₂</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Massa Molar:</span>
+                                    <span class="property-value">193.24 g/mol</span>
+                                </div>
+                            </div>
+                            <div class="detection-method mt-3">
+                                <h6>Métodos de Detecção</h6>
+                                <ul class="method-list">
+                                    <li>LC-MS/MS</li>
+                                    <li>Teste colorimétrico Marquis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Morfina -->
+                <div class="col-lg-4 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                <img src="/img/mofina-removebg-preview.png" 
+                                     alt="Estrutura molecular da Morfina" class="img-fluid">
+                            </div>
+                            <h3 class="substance-title">Morfina</h3>
+                            <div class="properties-grid mt-3">
+                                <div class="property-item">
+                                    <span class="property-label">Fórmula:</span>
+                                    <span class="property-value">C₁₇H₁₉NO₃</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Massa Molar:</span>
+                                    <span class="property-value">285.34 g/mol</span>
+                                </div>
+                            </div>
+                            <div class="detection-method mt-3">
+                                <h6>Métodos de Detecção</h6>
+                                <ul class="method-list">
+                                    <li>HPLC-UV</li>
+                                    <li>Imunoensaio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Heroína -->
+                <div class="col-lg-4 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                <img src="/img/heroina-removebg-preview.png" 
+                                     alt="Estrutura molecular da Heroína" class="img-fluid"
+                                     onerror="this.src='https://cdn.pixabay.com/photo/2013/07/12/17/00/molecule-151640_1280.png'">
+                            </div>
+                            <h3 class="substance-title">Heroína</h3>
+                            <div class="properties-grid mt-3">
+                                <div class="property-item">
+                                    <span class="property-label">Fórmula:</span>
+                                    <span class="property-value">C₂₁H₂₃NO₅</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Massa Molar:</span>
+                                    <span class="property-value">369.41 g/mol</span>
+                                </div>
+                            </div>
+                            <div class="detection-method mt-3">
+                                <h6>Métodos de Detecção</h6>
+                                <ul class="method-list">
+                                    <li>GC-MS</li>
+                                    <li>Teste colorimétrico</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fentanil -->
+                <div class="col-lg-4 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                <img src="/img/fetanil-removebg-preview.png" 
+                                     alt="Estrutura molecular do Fentanil" class="img-fluid">
+                            </div>
+                            <h3 class="substance-title">Fentanil</h3>
+                            <div class="properties-grid mt-3">
+                                <div class="property-item">
+                                    <span class="property-label">Fórmula:</span>
+                                    <span class="property-value">C₂₂H₂₈N₂O</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Massa Molar:</span>
+                                    <span class="property-value">336.47 g/mol</span>
+                                </div>
+                            </div>
+                            <div class="detection-method mt-3">
+                                <h6>Métodos de Detecção</h6>
+                                <ul class="method-list">
+                                    <li>LC-MS/MS</li>
+                                    <li>Imunoensaio específico</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ketamina -->
+                <div class="col-lg-4 mb-4">
+                    <div class="substance-card h-100" data-aos="fade-up">
+                        <div class="substance-content">
+                            <div class="substance-img mb-3">
+                                <img src="/img/ketamina2-removebg-preview.png" 
+                                     alt="Estrutura molecular da Ketamina" class="img-fluid">
+                            </div>
+                            <h3 class="substance-title">Ketamina</h3>
+                            <div class="properties-grid mt-3">
+                                <div class="property-item">
+                                    <span class="property-label">Fórmula:</span>
+                                    <span class="property-value">C₁₃H₁₆ClNO</span>
+                                </div>
+                                <div class="property-item">
+                                    <span class="property-label">Massa Molar:</span>
+                                    <span class="property-value">237.73 g/mol</span>
+                                </div>
+                            </div>
+                            <div class="detection-method mt-3">
+                                <h6>Métodos de Detecção</h6>
+                                <ul class="method-list">
+                                    <li>GC-MS</li>
+                                    <li>LC-MS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#requestSubstanceModal">
+                        <i class="fas fa-plus me-2"></i>Solicitar Análise de Nova Substância
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h5>Química Forense</h5>
+                    <p class="mb-3">Trabalho Acadêmico de Física - Análise de Substâncias em Investigações Criminais</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0">&copy; 2024 - Projeto Educacional</p>
+                    <small class="text-muted">Desenvolvido para fins acadêmicos</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Three.js for 3D molecules -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Particles.js for background effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
