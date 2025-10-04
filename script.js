@@ -562,39 +562,6 @@ const Utils = {
     }
 };
 
-// Função simples para alertar o usuário
-function notifyUserToChooseSection() {
-    alert('Por favor, abra o menu e escolha uma seção para continuar.');
-}
-
-// Evento DOMContentLoaded
-document.addEventListener('DOMContentLoaded', () => {
-    // Chame a função aqui
-    notifyUserToChooseSection();
-
-    // Inicializa o controlador do aplicativo
-    ForensicController.init();
-
-    // Cria o indicador de rolagem
-    const scrollIndicator = document.createElement('div');
-    scrollIndicator.className = 'scroll-indicator';
-    document.body.appendChild(scrollIndicator);
-
-    // Inicializa o fundo de partículas (opcional)
-    if (typeof particlesJS !== 'undefined') {
-        particlesJS('molecule-canvas', {
-            particles: {
-                number: { value: 50 },
-                color: { value: '#00d4ff' },
-                shape: { type: 'circle' },
-                opacity: { value: 0.3 },
-                size: { value: 3 },
-                move: { enable: true, speed: 1 }
-            }
-        });
-    }
-});
-
 // ===== INITIALIZATION =====
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
