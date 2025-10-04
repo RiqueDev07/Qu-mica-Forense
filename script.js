@@ -108,15 +108,19 @@ const ForensicView = {
     },
     
     // Setup event listeners
-    setupEventListeners() {
-        // Navigation clicks
-        this.navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const section = link.getAttribute('data-section');
-                ForensicController.navigateToSection(section);
-            });
-        });
+    const navbarMenu = document.querySelector('.navbar-menu'); // Atualize com o seletor correto do menu
+const navbarToggler = document.querySelector('.navbar-toggler');
+
+this.navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (navbarMenu && navbarMenu.classList.contains('open')) {
+            navbarMenu.classList.remove('open'); // Fecha o menu
+        }
+        if (navbarToggler) {
+            navbarToggler.classList.remove('active'); // Atualize o estado do botão
+        }
+    });
+});
         
         // Hero button clicks
         const heroButtons = document.querySelectorAll('[data-section]');
