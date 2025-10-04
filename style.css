@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-toggler {
     border: none;
     color: var(--text-primary);
+    background-color: var(--primary-color);
 }
 
 .navbar-toggler:focus {
